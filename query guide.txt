@@ -36,3 +36,43 @@
       updatedAt
     }
 }
+
+Order Queries:
+
+{
+  getProducts {
+    name
+    description
+    price
+      quantity
+      createdAt
+      updatedAt
+  }
+  
+  getProduct(id : "683af6bbe53b8ab21173bfde")
+    {
+      _id 
+      name
+      description
+      price
+      quantity
+      createdAt
+      updatedAt
+    }
+  
+  getOrders {
+    createdAt
+    totalPrice
+    products {
+      _id
+    }
+  }
+  
+  getOrder(id : "6844145e4fd79a7dd27f24da") {
+    createdAt
+    totalPrice
+    products {
+      _id
+    }
+  }
+}
