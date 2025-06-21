@@ -23,20 +23,19 @@ export const createOrder = async (request, response) => {
     //https://stackoverflow.com/questions/33399786/get-length-of-every-element-in-array-javascript
     //https://stackoverflow.com/questions/68840876/check-if-array-has-element-with-specific-length
 
+    // if (products.every((subarr) => subarr.length !== 19)) {
+    //   // then no array with length 7 exists
+    //   return response.status(404).send("Invalid Product Entered!");
+    // }
 
-    if (products.every((subarr) => subarr.length !== 19)) {
-      // then no array with length 7 exists
-      return response.status(404).send("Invalid Product Entered!");
-    }
+    // const docs = await Product.find({
+    //   _id: { $in: products },
+    // }).exec();
 
-    const docs = await Product.find({
-      _id: { $in: products },
-    }).exec();
+    // console.log(docs);
 
-    console.log(docs);
-
-    if (docs.length != products.length)
-      return response.status(404).send("Invalid Product Entered!");
+    // if (docs.length != products.length)
+    //   return response.status(404).send("Invalid Product Entered!");
 
     //let isFound = products.some((ai) => newArray.includes(ai));
     //if (!isFound) return response.status(404).send("Invalid Product Entered!");
