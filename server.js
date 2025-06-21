@@ -8,7 +8,7 @@ import { startDatabase } from "./config/db.js";
 import { graphqlHTTP } from "express-graphql";
 import graphql from "graphql";
 import { SCHEMA } from "./graphql/schemas.js";
-import { getProducts } from "./graphql/actions/product.js";
+import { getProducts, getProduct } from "./graphql/actions/product.js";
 
 const { buildSchema } = graphql;
 
@@ -16,6 +16,7 @@ const schema = buildSchema(SCHEMA);
 
 const root = {
   getProducts,
+  getProduct,
 };
 
 const app = express();

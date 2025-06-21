@@ -1,7 +1,7 @@
 export const SCHEMA = `
     type Query {
        getProducts: [Product]
-       getOneProduct(id: String!): Product
+       getProduct(id: String!): Product
     }
 
     type Product {

@@ -12,3 +12,27 @@
       _id
     }
   }
+
+  our query:
+  
+{
+  getProducts {
+    name
+    description
+    price
+      quantity
+      createdAt
+      updatedAt
+  }
+  
+  getProduct(id : "683af6bbe53b8ab21173bfde")
+    {
+      _id 
+      name
+      description
+      price
+      quantity
+      createdAt
+      updatedAt
+    }
+}
