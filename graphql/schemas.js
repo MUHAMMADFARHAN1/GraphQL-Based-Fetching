@@ -2,6 +2,8 @@ export const SCHEMA = `
     type Query {
        getProducts: [Product]
        getProduct(id: String!): Product
+       getOrders: [Order]
+       getOrder(id: String!): Order
     }
 
     type Product {
