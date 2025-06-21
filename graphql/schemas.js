@@ -19,6 +19,6 @@ export const SCHEMA = `
     type Order {
        createdAt: String
        totalPrice: Int
-       products : Product
+       products : [Product]
     }
 `;
