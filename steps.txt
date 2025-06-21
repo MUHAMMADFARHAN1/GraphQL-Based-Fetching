@@ -1,0 +1,57 @@
+The Steps:
+
+1. init an NPM project and add dependencies:
+   express, dotenv and moongose
+
+2. Set Up MongoDB Atlas:
+   https://www.mongodb.com/cloud/atlas/register
+   choose a free subscription for the account as well
+   save the credentials for MongoDB as well
+
+3. Install and setup MongoDb compass with relevant details.
+
+4. Create a database and connect to it with MongoDB compass
+
+5. Create a .env file with the url of the database, make sure it is 
+   in root folder or as same level as package.json
+
+6. Run the server with connection to the database to check if the 
+   connection was successful or not.
+
+7. Create a database schema using draw.io and relations.
+
+8. Implement the model for the moongose as per the generated database.
+
+
+
+
+Error Details:
+E11000 duplicate key error collection: Books.Products index: slug_1 dup key: { slug: null }
+happens when the schema is fixed on mongoDB side and can only be fixed by deleting the DB altogether.
+As imlciitly the value is fixed
+
+
+Test Data:
+
+Products
+ {
+    "name": "First",
+    "description": "Product 1",
+    "price": "10",
+    "quantity": "5",
+    "createdAt": "01/12/2022"
+  }
+
+
+Orders:
+ {
+    "products": ["683ae06841c67cef9b752d86"],
+    "totalPrice": "5",
+    "createdAt": "01/12/2022"
+  }
+
+
+
+Things to do:
+- Calculation of price in the order is to be done.
+- Service Layer refactoring 
