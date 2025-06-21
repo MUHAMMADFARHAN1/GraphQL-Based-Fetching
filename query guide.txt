@@ -1,0 +1,14 @@
+1. We need to enable graphiql: true, to be able to see console in graphql. 
+2. Qureies:
+{
+    getProducts {
+      _id
+      name
+      description
+      price
+    }
+    getOneProduct (slug : "_id")
+    {
+      _id
+    }
+  }

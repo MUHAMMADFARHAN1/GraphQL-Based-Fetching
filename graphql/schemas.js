@@ -11,6 +11,7 @@ export const SCHEMA = `
        price: Int
        quantity: Int
        createdAt: String
+       updatedAt: String
     }
 
     type Order {
